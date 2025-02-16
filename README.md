@@ -42,7 +42,7 @@ pip install torch torchvision numpy matplotlib tqdm
    ```
 2. Run the training script:
    ```bash
-   python train.py
+   python IIS_CV.py
    ```
 3. View loss & accuracy plots after training.
 
