@@ -126,7 +126,7 @@ model = ResNet(ResidualBlock, [2, 2, 2, 2]).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9, weight_decay=5e-4)
 
-scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=2, verbose=True)
+scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=2)
 
 num_of_epoch = 20
 best_valid_acc = 0.0
